@@ -40,6 +40,9 @@ Este projeto demonstra a implementação de **9 Design Patterns clássicos** org
 ### 1️⃣ **Singleton Pattern**
 > 📁 **Arquivo:** `plugins/apiClient.ts`
 
+**🎯 O que é:**
+O Singleton garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global a ela.
+
 **🎯 Objetivo:** Garantir que apenas uma instância do cliente HTTP exista em toda a aplicação.
 
 ```typescript
@@ -70,6 +73,9 @@ export class ApiClient {
 
 ### 2️⃣ **Builder Pattern**
 > 📁 **Arquivo:** `composables/useTaskBuilder.ts`
+
+**🎯 O que é:**
+O Builder constrói um objeto complexo passo a passo. O mesmo processo de construção pode criar diferentes representações.
 
 **🎯 Objetivo:** Construir objetos complexos step-by-step com interface fluente.
 
@@ -109,6 +115,9 @@ const newTask = builder
 ### 3️⃣ **Factory Method Pattern**
 > 📁 **Arquivo:** `components/inputs/InputFactory.ts`
 
+**🎯 O que é:**
+O Factory Method cria objetos sem especificar as classes exatas que devem ser criadas. Define uma interface para criar um objeto, mas deixa as subclasses decidirem qual classe instanciar.
+
 **🎯 Objetivo:** Criar componentes dinamicamente sem especificar classes concretas.
 
 ```typescript
@@ -141,6 +150,9 @@ export function createInput(type: InputType) {
 ### 4️⃣ **Facade Pattern**
 > 📁 **Arquivo:** `services/taskService.ts`
 
+**🎯 O que é:**
+O Facade fornece uma interface simplificada para um subsistema complexo. Define uma interface de alto nível que torna o subsistema mais fácil de usar.
+
 **🎯 Objetivo:** Simplificar acesso a subsistemas complexos com interface unificada.
 
 ```typescript
@@ -166,6 +178,9 @@ export const taskService = {
 
 ### 5️⃣ **Adapter Pattern**
 > 📁 **Arquivo:** `services/authAdapter.ts`
+
+**🎯 O que é:**
+O Adapter permite que interfaces incompatíveis trabalhem juntas. Converte a interface de uma classe em outra interface que os clientes esperam.
 
 **🎯 Objetivo:** Adaptar interfaces incompatíveis para trabalhar juntas.
 
@@ -200,6 +215,9 @@ export async function login(username: string, password: string) {
 ### 6️⃣ **Decorator Pattern**
 > 📁 **Arquivo:** `decorators/withLogger.ts`
 
+**🎯 O que é:**
+O Decorator anexa responsabilidades adicionais a um objeto dinamicamente. Fornece uma alternativa flexível à herança para estender funcionalidades.
+
 **🎯 Objetivo:** Adicionar funcionalidades a componentes sem modificar código original.
 
 ```typescript
@@ -231,6 +249,9 @@ const TaskListWithLogger = withLogger(TaskList);
 
 ### 7️⃣ **Observer Pattern**
 > 📁 **Arquivo:** `composables/useEventBus.ts`
+
+**🎯 O que é:**
+O Observer define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.
 
 **🎯 Objetivo:** Comunicação desacoplada via eventos entre componentes.
 
@@ -264,6 +285,9 @@ bus.on('task-added', (task) => {
 
 ### 8️⃣ **Strategy Pattern**
 > 📁 **Arquivo:** `strategies/taskSortStrategy.ts`
+
+**🎯 O que é:**
+O Strategy define uma família de algoritmos, encapsula cada um e os torna intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam.
 
 **🎯 Objetivo:** Algoritmos intercambiáveis para diferentes formas de ordenação.
 
@@ -299,6 +323,9 @@ const sortedTasks = computed(() => {
 
 ### 9️⃣ **Command Pattern**
 > 📁 **Arquivo:** `utils/commandManager.ts`
+
+**🎯 O que é:**
+O Command encapsula uma solicitação como um objeto, permitindo parametrizar clientes com diferentes solicitações, enfileirar ou registrar solicitações e suportar operações que podem ser desfeitas.
 
 **🎯 Objetivo:** Encapsular ações como objetos para implementar undo/redo.
 
