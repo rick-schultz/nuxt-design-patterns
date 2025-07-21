@@ -2,7 +2,7 @@
 
 Este documento fornece uma explicação detalhada de cada um dos 9 Design Patterns implementados no projeto.
 
-## 🏗️ Padrões Criacionais
+## Padrões Criacionais
 
 ### 1. Singleton Pattern
 **Arquivo:** `plugins/apiClient.ts`
@@ -66,7 +66,7 @@ export function createInput(type: InputType) {
 - Baixo acoplamento
 - Fácil extensão
 
-## 🏛️ Padrões Estruturais
+## Padrões Estruturais
 
 ### 4. Facade Pattern
 **Arquivo:** `services/taskService.ts`
@@ -128,7 +128,7 @@ export function withLogger(component: any) {
 - Não modifica código original
 - Composição flexível
 
-## 🎭 Padrões Comportamentais
+## Padrões Comportamentais
 
 ### 7. Observer Pattern
 **Arquivo:** `composables/useEventBus.ts`
@@ -212,7 +212,7 @@ export class CommandManager {
 - Encapsulamento de ações
 - Histórico de comandos
 
-## 📊 Benefícios da Implementação
+## Benefícios da Implementação
 
 ### Manutenibilidade
 - Código organizado por responsabilidades

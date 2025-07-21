@@ -6,7 +6,7 @@ Este projeto é uma demonstração completa de como aplicar **9 Design Patterns 
 
 ## Design Patterns aplicados
 
-### 🏗️ **Padrões Criacionais (3)**
+### **Padrões Criacionais (3)**
 
 #### 1. Singleton
 - **O que é:** Garante que uma classe tenha apenas uma instância.
@@ -23,7 +23,7 @@ Este projeto é uma demonstração completa de como aplicar **9 Design Patterns 
 - **Onde está:** `components/inputs/InputFactory.ts`
 - **Para quê:** Criar diferentes tipos de componentes de input dinamicamente.
 
-### 🏛️ **Padrões Estruturais (3)**
+### **Padrões Estruturais (3)**
 
 #### 4. Facade
 - **O que é:** Simplifica o uso de subsistemas complexos por meio de uma interface simples.
@@ -40,7 +40,7 @@ Este projeto é uma demonstração completa de como aplicar **9 Design Patterns 
 - **Onde está:** `decorators/withLogger.ts`
 - **Para quê:** Adicionar funcionalidade de log aos componentes Vue.
 
-### 🎭 **Padrões Comportamentais (3)**
+### **Padrões Comportamentais (3)**
 
 #### 7. Observer
 - **O que é:** Permite comunicação por eventos entre partes desacopladas da aplicação.
@@ -59,7 +59,7 @@ Este projeto é uma demonstração completa de como aplicar **9 Design Patterns 
 
 ---
 
-## 🔄 **Como os Padrões Trabalham Juntos**
+## **Como os Padrões Trabalham Juntos**
 
 ### Fluxo de Criação de Tarefa:
 1. **Factory** cria o componente de input apropriado
@@ -87,7 +87,7 @@ Este projeto é uma demonstração completa de como aplicar **9 Design Patterns 
 
 ---
 
-## 📚 **Documentação Completa**
+## **Documentação Completa**
 
 - **README.md** - Visão geral e instruções básicas
 - **DESIGN_PATTERNS.md** - Documentação detalhada de cada padrão com exemplos
