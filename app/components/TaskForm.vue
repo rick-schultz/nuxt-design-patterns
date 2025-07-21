@@ -59,7 +59,6 @@ function submit() {
 
   bus.emit('task-added', newTask);
 
-  // Resetar formulário se quiser
   formData.title = '';
   formData.description = '';
   formData.dueDate = '';

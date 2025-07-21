@@ -1,5 +1,5 @@
 export async function externalLogin(username: string, password: string) {
-  // Simulação delay e retorno da API externa
+  // Simulating a delay and returning from an external API
   await new Promise((r) => setTimeout(r, 500));
   if (username === 'rick' && password === '1234') {
     return {

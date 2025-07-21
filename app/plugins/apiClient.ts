@@ -9,7 +9,7 @@ export class ApiClient {
   }
 
   async get(endpoint: string) {
-    // Aqui você pode adicionar token, headers, etc
+    // headers and other configurations would be added here
     const res = await fetch(`${this.baseUrl}/${endpoint}`);
     if (!res.ok) throw new Error('Erro na requisição');
     return res.json();
